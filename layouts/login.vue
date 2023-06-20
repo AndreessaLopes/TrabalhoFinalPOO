@@ -1,0 +1,4 @@
+<template>
+  <LoginBar />
+  <slot />
+</template>

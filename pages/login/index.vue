@@ -1,0 +1,3 @@
+<template>
+  <LoginInfo />
+</template>
