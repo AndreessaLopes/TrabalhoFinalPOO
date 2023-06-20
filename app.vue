@@ -12,7 +12,12 @@
 let route = useRoute()
 
 function getLayout() {
-  return route.path === '/login' ? 'login' : 'default'
+  if (route.path === '/login') {
+    return 'login'
+  } if (route.path === '/') {
+    return 'register'
+  }
+  return 'default'
 }
 
 </script>
