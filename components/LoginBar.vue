@@ -5,9 +5,7 @@
       color="primary-darken-1"
     >
       <v-toolbar-title>
-        <v-img
-          width="50px"
-        />
+        Color Friend's
       </v-toolbar-title>
 
     </v-app-bar>

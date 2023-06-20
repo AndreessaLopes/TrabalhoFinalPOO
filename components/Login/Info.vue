@@ -1,6 +1,8 @@
 <template>
   <div class="d-flex align-center justify-center" style="height: 90vh">
-    <v-card class="elevation-12">
+    <v-card
+      class="elevation-12 rounded-xl" 
+    >
       <v-toolbar 
       dark 
       color="primary-darken-1">

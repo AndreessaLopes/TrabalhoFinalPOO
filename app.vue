@@ -1,5 +1,5 @@
 <template>
-  <v-app>
+  <v-app class="bg-gradient-blue">
     <NuxtLayout :name="getLayout()">
       <v-container class="main-content">
         <NuxtPage />
@@ -20,5 +20,12 @@ function getLayout() {
 <style>
 .main-content {
   margin-top: 50px;
+}
+
+.bg-gradient-blue {
+  background: #3B28CC;
+  background: linear-gradient(99deg, #abc4ff 0%, #ADD7F6 35%, #FFFFFF 100%); 
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 </style>
