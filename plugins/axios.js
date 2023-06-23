@@ -1,5 +1,4 @@
 import axios from 'axios';
-import notify from '~/plugins/notify'
 
 export default defineNuxtPlugin(nuxtApp => {
 
@@ -24,11 +23,8 @@ export default defineNuxtPlugin(nuxtApp => {
   })
 
   api.interceptors.response.use(response => {
-    let route = response.config.url
-    notify.sendSuccess(response.data.messages, route)
     return response
   }, error => {
-    notify.sendError(error.response.data.messages)
     return Promise.reject(error.response)
   })
   
