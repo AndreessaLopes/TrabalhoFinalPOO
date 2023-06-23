@@ -8,7 +8,6 @@ import '@mdi/font/css/materialdesignicons.css'
 export default defineNuxtPlugin(nuxtApp => {
   const vuetify = createVuetify({
     ssr: true,
-    ssr: true,
     theme: {
       defaultTheme: 'dessaLight',
       themes: {
