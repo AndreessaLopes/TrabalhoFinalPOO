@@ -24,7 +24,6 @@
             block
             text="Acessar"
             :loading="loading"
-            to="/feed"
           />
         </v-form>
       </v-sheet>
@@ -32,7 +31,31 @@
   </div>
 </template>
 <script setup>
+  let { $api } = useNuxtApp()
+
   let email = useState('email')
   let password = useState('password')
   let loading = useState('loading')
+
+  let stall = async (stallTime = 3000) => {
+    await new Promise(resolve => setTimeout(resolve, stallTime))
+  }
+
+  let handleLogin = async () => {
+    await stall().then(() => {
+      loading.value = false
+      navigateTo('/feed')
+    })
+  }
+
+
+
+
+  // let handleLogin = async () => {
+  //   $api.post('/login', {
+  //     email: email.value,
+  //     password: password.value
+  //   })
+  // }
+
 </script>

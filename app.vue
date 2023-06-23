@@ -32,9 +32,9 @@ function getLayout() {
 }
 
 .bg-gradient-blue {
-  background: #3B28CC;
-  background: linear-gradient(99deg, #abc4ff 0%, #ADD7F6 35%, #FFFFFF 100%); 
-  background-repeat: no-repeat;
-  background-size: cover;
+  background: #3B28CC !important;
+  background: linear-gradient(99deg, #abc4ff 0%, #ADD7F6 35%, #FFFFFF 100%) !important; 
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
 }
 </style>

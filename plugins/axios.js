@@ -3,7 +3,7 @@ import axios from 'axios';
 export default defineNuxtPlugin(nuxtApp => {
 
   let api = axios.create({
-    baseURL: useRuntimeConfig().apiBase,
+    baseURL: useRuntimeConfig().public.apiBase,
     timeout: 60000,
     headers: {
       'Content-type': 'application/json; charset=UTF-8',
