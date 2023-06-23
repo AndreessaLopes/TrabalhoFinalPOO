@@ -24,6 +24,7 @@
             block
             text="Acessar"
             :loading="loading"
+            @click="handleLogin"
           />
         </v-form>
       </v-sheet>
