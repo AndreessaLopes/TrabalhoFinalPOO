@@ -25,6 +25,7 @@
             block
             text="Cadastrar"
             class="mb-2"
+            to="/login"
           />
           <p class="text-subtitle-2 text-center">Já possuí uma conta?</p>
           <button-dark

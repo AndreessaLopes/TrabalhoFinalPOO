@@ -17,8 +17,12 @@ function getLayout() {
   } if (route.path === '/') {
     return 'register'
   }
-  return 'default'
+  if (route.path === '/') {
+    return 'feed'
+  }
 }
+
+
 
 </script>
 

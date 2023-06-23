@@ -24,6 +24,7 @@
             block
             text="Acessar"
             :loading="loading"
+            to="/feed"
           />
         </v-form>
       </v-sheet>
