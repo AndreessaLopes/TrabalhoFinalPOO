@@ -33,5 +33,16 @@
 </template>
 
 <script setup>
-let route = useRoute()
+  let route = useRoute()
+
+  let { $api } = useNuxtApp()
+
+  let posts = useState('posts')
+
+  let getPosts = async () => {
+    await $api.get(`/posts/${route.params.id}`).then(res => {
+      posts.value = res.data
+    }).catch(error => console.log(error))
+  }
+
 </script>
