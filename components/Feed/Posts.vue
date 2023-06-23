@@ -12,26 +12,13 @@
 </template>
 
 <script setup>
+  let { $api } = useNuxtApp()
 
-  let posts = [
-    {
-      id: '1',
-      name: 'Bruno Conte',
-      email: 'bruno@teste.com',
-      content: 'Peguei Xerife ontem no CS' 
-    },
-    {
-      id: '2',
-      name: 'Andressa Lopes',
-      email: 'andressa@teste.com',
-      content: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.' 
-    },
-    {
-      id: '3',
-      name: 'Nathan Silva',
-      email: 'nathan@teste.com',
-      content: 'Cheguei de viagem ontem!' 
-    },
-  ]
+  let posts = useState('posts')
 
+  let getPosts = async () => {
+    await $api.get('/posts').then(res => {
+      posts.value = res.data
+    }).catch(error => console.log(error))
+  }
 </script>
