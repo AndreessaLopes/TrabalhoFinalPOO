@@ -11,6 +11,7 @@
   </div>
 </template>
 
+
 <script setup>
   let { $api } = useNuxtApp()
 

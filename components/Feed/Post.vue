@@ -6,8 +6,9 @@
     <v-card-actions>
       <v-list-item class="w-100">
         <template v-slot:prepend>
-          <v-avatar color="#7a7a7a"
-            image="https://avataaars.io/?avatarStyle=Transparent&topType=ShortHairShortCurly&accessoriesType=Prescription02&hairColor=Black&facialHairType=Blank&clotheType=Hoodie&clotheColor=White&eyeType=Default&eyebrowType=DefaultNatural&mouthType=Default&skinColor=Light"></v-avatar>
+          <v-btn><v-avatar  color="#7a7a7a"
+           image="https://avataaars.io/?avatarStyle=Transparent&topType=ShortHairShortCurly&accessoriesType=Prescription02&hairColor=Black&facialHairType=Blank&clotheType=Hoodie&clotheColor=White&eyeType=Default&eyebrowType=DefaultNatural&mouthType=Default&skinColor=Light"></v-avatar></v-btn>
+           <nuxt-link :to="`/avatar`"></nuxt-link>
         </template>
 
         <nuxt-link :to="`/profile/${id}`">

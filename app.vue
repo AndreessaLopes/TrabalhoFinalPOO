@@ -20,6 +20,9 @@ function getLayout() {
   if (route.path === '/') {
     return 'feed'
   }
+  if (route.path === '/') {
+    return 'avatar'
+  }
 }
 
 
