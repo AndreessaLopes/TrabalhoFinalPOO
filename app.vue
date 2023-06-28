@@ -23,6 +23,9 @@ function getLayout() {
   if (route.path === '/') {
     return 'avatar'
   }
+  if (route.path === '/') {
+    return 'amigos'
+  }
 }
 
 

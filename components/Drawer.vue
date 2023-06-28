@@ -32,46 +32,22 @@
 <script setup>
   let items =  [
         {
-          icon: 'mdi-view-dashboard',
-          title: 'Dashboard',
-          to: '/inicio',
+          icon: 'mdi-newspaper',
+          title: 'Feed',
+          to: '/feed',
           role: 'logged',
         },
         {
-          icon: 'mdi-account',
+          icon: 'mdi-account-circle',
           title: 'Minha Conta',
-          to: '/perfil',
+          to: '/profile',
           role: 'UFA_OPO',
         },
         {
-          icon: 'mdi-account-group',
-          title: 'Usuários',
-          to: '/usuarios',
+          icon: 'mdi-account-multiple',
+          title: 'Amigos',
+          to: '/amigos',
           role: 'UFA_ADM',
         },
-        {
-          icon: 'mdi-account-school',
-          title: 'Alunos',
-          to: '/alunos',
-          role: 'UFA_OPO',
-        },
-        {
-          icon: 'mdi-human-queue',
-          title: 'Professores',
-          to: '/professores',
-          role: 'UFA_OPO',
-        },
-        {
-          icon: 'mdi-crowd',
-          title: 'Turmas',
-          to: '/turmas',
-          role: 'UFA_OPO',
-        },
-        {
-          icon: 'mdi-calendar',
-          title: 'Calendário',
-          to: '/calendario',
-          role: 'UFA_OPO',
-        }
       ]
 </script>
