@@ -1,21 +1,21 @@
 <template>
-  <v-banner class="mx-auto my-5" color="white" colorText="black" width="87,5%">
+<v-banner class="mx-auto my-5" color="white" colorText="black" width="87,5%">
     <v-card-actions>
       <v-list-item class="w-100">
         <template v-slot:prepend>
           <v-img class="mx-auto" :width="100" aspect-ratio="16/9" cover
             src="https://avataaars.io/?avatarStyle=Transparent&topType=ShortHairShortCurly&accessoriesType=Prescription02&hairColor=Black&facialHairType=Blank&clotheType=Hoodie&clotheColor=White&eyeType=Default&eyebrowType=DefaultNatural&mouthType=Default&skinColor=Light"></v-img>
         </template>
-
+  
         <v-col cols="6" class="text-h5" align-self="center">
           <p class="mr-15">
-            Andressa Lopes
+            Daniel Reis
           </p>
           <a class="text-subtitle-2 text-center">
-            @dessaa__lopes
+            @drgsantaana
           </a>
         </v-col>
-
+  
         <template v-slot:append>
           <div class="justify-self-end">
             <v-btn1 size="small"></v-btn1>
@@ -26,29 +26,9 @@
           </div>
         </template>
       </v-list-item>
-
+  
     </v-card-actions>
-
+  
   </v-banner>
 
-  
-
-
 </template>
-
-
-
-<script setup>
-  let route = useRoute()
-
-  let { $api } = useNuxtApp()
-
-  let posts = useState('feed')
-
-  let getPosts = async () => {
-    await $api.get(`/feed/${route.params.id}`).then(res => {
-      posts.value = res.data
-    }).catch(error => console.log(error))
-  }
-
-</script>
