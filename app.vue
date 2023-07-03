@@ -24,6 +24,15 @@ function getLayout() {
     return 'avatar'
   }
   if (route.path === '/') {
+    return 'profile/id'
+  }
+  if (route.path === '/') {
+    return 'profile/id2'
+  }
+  if (route.path === '/') {
+    return 'profile/id3'
+  }
+  if (route.path === '/') {
     return 'amigos'
   }
 }
