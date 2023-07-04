@@ -14,21 +14,7 @@
     </v-toolbar>
     
     <v-col>
-    <v-card width="400">
-      <template v-slot:title>
-        Andressa Lopes
-      </template>
-
-      <template v-slot:subtitle>
-        @dessaa__lopes
-      </template>
-
-      <template v-slot:text>
-        <v-btn>Adicionar Amigo</v-btn>
-        <v-btn>Remover Amigo</v-btn>
-      </template>
-    </v-card>
-
+    
     <v-card width="400">
       <template v-slot:title>
         Hugo Cesar
