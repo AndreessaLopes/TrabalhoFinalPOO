@@ -1,7 +1,7 @@
 <template>
   <v-navigation-drawer expand-on-hover rail permanent>
     <v-list>
-      <v-list-item title='User' subtitle='user@email.com'>
+      <v-list-item title='Andressa Lopes' subtitle='@dessaa__lopes'>
       </v-list-item>
     </v-list>
     <v-divider></v-divider>
